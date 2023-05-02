@@ -25,7 +25,7 @@ def solve_game(p):
     # TODO: encrypt the quiz number and send back to the program
     # e.g., Please encrypt the following number and send back to me: 193
     # HINT: use pow(m, e, N), where m is the plaintext message
-    result = pow(1, 1, 1)   # edit this line
+    result = pow(quiz_number, e, N)   # edit this line
     rprint("Encrypted number %d" % result)
     p.sendline(str(result))
 
@@ -56,7 +56,7 @@ def solve_game(p):
     # TODO: encrypt the quiz number and send back to the program
     # e.g., Please encrypt the following number and send back to me: 193
     # HINT: use pow(c, d, N), where c is the ciphertext message
-    result = pow(1, 1, 1) # edit this line
+    result = pow(quiz_number, d, N) # edit this line
     rprint("Decrypted number %d" % result)
     p.sendline(str(result))
 
